@@ -1,0 +1,41 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+ 
+	
+	<Files ".*">
+		Order Allow,Deny
+		Deny from all
+	</Files>
+	
+	RewriteRule ^(vendor|tests|routes|resources|database|config|bootstrap|app)(/.*|)$ - [NC,F]
+	
+    RewriteEngine On
+	RewriteBase /ImageCrop/
+    Options All -Indexes
+	
+	
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+ 	RewriteRule ^js/(.*)$  public/js/$1 [L,R=302]
+	RewriteRule ^css/(.*)$ public/css/$1 [L,R=302]
+	RewriteRule ^img/(.*)$ public/img/$1 [L,R=302]
+	RewriteRule ^avatar/(.*)$ public/avatar/$1 [L,R=302]
+	RewriteRule ^temp/(.*)$ public/temp/$1 [L,R=302]
+	RewriteRule ^json/(.*)$ public/json/$1 [L,R=302]
+	RewriteRule ^images/(.*)$ public/images/$1 [L,R=302]
+	RewriteRule ^assets/(.*)$ public/assets/$1 [L,R=302]
+	RewriteRule ^pixie/(.*)$ public/pixie/$1 [L,R=302]
+	RewriteRule ^files/(.*)$ public/files/$1 [L,R=302]
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+ 
+	
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>
