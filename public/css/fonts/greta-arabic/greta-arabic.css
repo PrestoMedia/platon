@@ -1,0 +1,34 @@
+/*
+* Webfonts served by tptq-arabic.com
+*
+* To make the font files as small as possible,
+* most glyphs and OpenType features were removed.
+* To edit the fonts, add more language support,
+* log it to your TPTQ Arabic account:
+* http://www.tptq-arabic.com/my_account/webfonts
+*
+* The TPTQ Arabic Font Software is protected under domestic
+* and international trademark and copyright law.
+* Modifying, reverse engineering or otherwise copying
+* of TPTQ Arabic Font Software is illegal.
+* http://www.tptq-arabic.com/licensing/
+*
+* (c) 2015, TPTQ Arabic
+* Generated: 2015-12-24 17:01:41
+*/
+
+@font-face {
+    font-family: "Greta Arabic Regular";
+    src: url("WF-000031-000018-000061-1dbde23202e80f3a16b20635149063a7.eot");
+    src: url("WF-000031-000018-000061-1dbde23202e80f3a16b20635149063a7.eot?#iefix") format("embedded-opentype"), url("WF-000031-000018-000061-1dbde23202e80f3a16b20635149063a7.woff2") format("woff2"), url("WF-000031-000018-000061-1dbde23202e80f3a16b20635149063a7.woff") format("woff"), url("WF-000031-000018-000061-1dbde23202e80f3a16b20635149063a7.svg#TPTQ Arabic_webfonts_service") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Greta Arabic Regular";
+    src: url("WF-000031-000018-000064-acd07249bb9a68c9fb3cb8df3401d69b.eot");
+    src: url("WF-000031-000018-000064-acd07249bb9a68c9fb3cb8df3401d69b.eot?#iefix") format("embedded-opentype"), url("WF-000031-000018-000064-acd07249bb9a68c9fb3cb8df3401d69b.woff2") format("woff2"), url("WF-000031-000018-000064-acd07249bb9a68c9fb3cb8df3401d69b.woff") format("woff"), url("WF-000031-000018-000064-acd07249bb9a68c9fb3cb8df3401d69b.svg#TPTQ Arabic_webfonts_service") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
